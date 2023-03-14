@@ -1,2 +1,9 @@
-package sam.projetos.padroesprojetosping.model;public class ClienteRepository {
+package sam.projetos.padroesprojetosping.model;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ClienteRepository extends CrudRepository<Cliente, Long> {
+
 }
